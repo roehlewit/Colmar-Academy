@@ -1,0 +1,277 @@
+/* Wide ranging style*/
+html{
+    width: auto;
+}
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: rgb(73, 71, 71);
+    flex-shrink: 2;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 32px;
+}
+h2{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.25em;
+}
+h3 {
+    font-weight: 300;
+    margin: 24px;
+    font-size: 2rem;
+}
+h4 {
+    font-weight: 100;
+    line-height: 1.5em;
+    font-size: 1.25rem;
+}
+
+/* Header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
+    margin-top: 0;
+    height: 64px;
+    width: 100%;
+}
+header img {
+    width: auto;
+    height: 80%;
+}
+header #logo { 
+    display:flex;
+    flex-direction: row;
+    font-size: 32px;
+    height: 64px;
+    margin: 0 24px;
+    align-items: center;
+}
+.bold {
+    font-weight: 600;
+}
+.light{
+    font-weight: 200;
+    color: gray;
+} 
+nav {
+    display: flex;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 24px; 
+}
+li {
+    margin: 20px 16px;
+}
+a {
+    font-size: 1.25rem;
+    color: black; 
+    text-decoration-line: none;
+    font-weight: 200;
+}
+
+/* Banner*/
+.banner {
+    display: flex;
+    margin-top: 0px;
+    background-color: rgba(189, 185, 185, .5);
+    width: 100%;
+}
+.leftbanner {
+    width: 60%;
+    padding: 24px 32px;
+}
+.banner img {
+    width: 100%;
+    height: auto;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+button {
+    height: 40px;
+    width: 400px;
+    margin: 20px 0 0 0;
+    padding: 8px 0;
+    color: rgb(240, 233, 233);
+    background-color: rgba(70, 67, 67, 0.8);
+    font-size: 1.2rem;
+}
+
+/*Main*/
+.main {
+    display:flex;
+    flex-direction: row;
+}
+.mainpic {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-bottom: 32px;
+    padding: 32px 24px;
+}
+.mainpic img {
+    width: 100%;
+}
+.right_side_info{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 16px;
+    margin-bottom: 32px;
+    width: 40%;
+}
+.resources {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+}
+.resources img {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 3;
+    height: auto;
+    width: 35%; 
+    padding: 16px 24px;
+}
+.dark{
+    background-color: rgba(189, 185, 185, .5);
+}
+.options {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 10px;
+    
+}
+.options h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+.options h4{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.options a {
+    color: blue
+}
+
+/* Courses Section*/
+.Start { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(189, 185, 185, .5);
+    padding-bottom: 32px;
+}
+.Start h1 {
+    align-content: center;
+}
+.courses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.course_box img{
+    height: auto;
+}
+.course_box h2 {
+    padding-left: 16px;
+}
+.course_box h4 {
+    padding-left: 16px;
+}
+.course_box {
+   margin: 32px;
+   background-color: white;
+}
+
+/* Thesis*/
+.thesis_exhibit {
+    display: flex;
+    flex-direction: column;
+}
+.thesisbody {
+    display: flex;
+    flex-direction: row;
+}
+.thesis {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin: 32px;
+    text-align: center;
+}
+.leftside {
+    flex-direction: column;
+    width: 60%;
+    padding: 0 24px 24px 24px;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+.rightside { 
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.rightside img {
+    width: 35%;
+    padding: 16px;
+}
+.rightside h2  {
+    padding-top: 24px;
+    margin-bottom: 0;
+}
+.rightside h4 {
+    margin-top: 0;
+}
+.fisma {
+    display:flex;
+    background-color: rgba(189, 185, 185, .5);
+}
+.nowandthen {
+    display: flex;
+}
+.fismatext {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    width: 65%;
+} 
+.nowtext {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    width: 65%;
+}
+ 
+/* Footer*/
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 24px;
+}
+.footbar {
+    display: flex;
+    align-items: center;
+}
+.footbar a {
+    padding: 0 8px;
+}
