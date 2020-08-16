@@ -12,7 +12,7 @@ body {
 h1{
     font-weight: 700;
     font-size: 3.5rem;
-    margin: 32px;
+    margin: 5%;
 }
 h2{
     font-weight: 600;
@@ -21,7 +21,7 @@ h2{
 }
 h3 {
     font-weight: 300;
-    margin: 24px;
+    margin: 5%;
     font-size: 2rem;
 }
 h4 {
@@ -35,10 +35,10 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: whitesmoke;
+    background-color: white;
     margin-top: 0;
     height: 64px;
-    width: 100%;
+    width: auto;
 }
 header img {
     width: auto;
@@ -98,23 +98,38 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     width: 40%;
+    height: auto;
+    margin: 5% 0;
+}
+.description h1 {
+    display: flex;
+    flex-flow: 1 3 40px;
+    margin: 1rem 2rem;
+}
+.description h2{
+    display: flex;
+    flex-flow: 1 3 40px;
+    margin: 1rem 2rem;
+}
+.description a {  
+    height: 10%;
+    width: 50%;
+    background-color: rgba(70, 67, 67, 0.6);
+    margin: 1rem 2rem;
 }
 button {
-    height: 40px;
-    width: 400px;
-    margin: 20px 0 0 0;
-    padding: 8px 0;
-    color: rgb(240, 233, 233);
-    background-color: rgba(70, 67, 67, 0.8);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(70, 67, 67, 0.6);
+    color: white;
 }
-
 /*Main*/
 .main {
     display:flex;
     flex-direction: row;
+    width: 100%;
 }
 .mainpic {
     display: flex;
@@ -123,29 +138,40 @@ button {
     margin-bottom: 32px;
     padding: 32px 24px;
 }
+.maintext {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1%;
+}
+.maintext h4{
+    padding-left: 5%;
+}
 .mainpic img {
     width: 100%;
+    height: auto;
 }
 .right_side_info{
     display:flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding-top: 16px;
-    margin-bottom: 32px;
+    margin-bottom: 18%;
     width: 40%;
 }
 .resources {
     display: flex;
     flex-direction: row;
-    justify-items: center;
+    width: 100%;
+    margin: 0% 2%;
 }
 .resources img {
     display: flex;
     flex-direction: column;
-    flex-grow: 3;
-    height: auto;
     width: 35%; 
-    padding: 16px 24px;
+    height: auto;
+    overflow: hidden;
+    padding: 3% 3%;
 }
 .dark{
     background-color: rgba(189, 185, 185, .5);
@@ -155,30 +181,32 @@ button {
     flex-direction: column;
     justify-content: center;
     width: 65%;
-    padding: 10px;
-    
+    height: auto;
+    padding: 2%;
 }
 .options h2 {
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
 }
 .options h4{
     margin: 0;
-    padding-bottom: 10px;
+    padding-bottom: 2%;
 }
 .options a {
     color: blue
 }
 
 /* Courses Section*/
-.Start { 
+.start { 
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    height: auto;
     background-color: rgba(189, 185, 185, .5);
     padding-bottom: 32px;
 }
-.Start h1 {
+.start h1 {
     align-content: center;
 }
 .courses {
@@ -188,6 +216,7 @@ button {
     justify-content: center; 
 }
 .course_box img{
+    width: 100%;
     height: auto;
 }
 .course_box h2 {
@@ -259,8 +288,7 @@ video {
     flex-direction: column;
     padding: 0 16px;
     width: 65%;
-}
- 
+} 
 /* Footer*/
 footer {
     display: flex;
@@ -274,4 +302,86 @@ footer {
 }
 .footbar a {
     padding: 0 8px;
+}
+/* Media Queries*/
+@media only screen and (min-width: 300px) and (max-width: 991px){
+    body {
+        width: 100%;
+    }
+    
+    .banner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2rem;
+    }
+    .leftbanner {
+        width: 100%;
+    }
+    .description {
+        display:flex;
+        margin-left: 3rem;
+        width: 100%;
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2rem;
+    }
+    .mainpic {
+        width: 100%;
+    }
+    .right_side_info {
+        display: flex;
+        width: 100%;
+    }
+    .resources {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin:0rem;
+    }
+    .resources img {
+        width: 60%;
+        height: auto;
+        padding: 2rem;
+    }
+    .options {
+        margin-left: 6rem;
+        margin-bottom: 2rem;
+    }
+    .start {
+        margin-left: 2rem;
+        width: 100%;
+    }
+    .courses {
+        margin: 0 2rem;
+        padding: 0 4rem;
+    }
+    .course_box{
+        width: 100%;
+        padding: 2rem;
+    }
+    .thesis_exhibit {
+        margin-left: 3rem;
+    }
+    .thesisbody {
+        flex-wrap: wrap;
+    }
+    .leftside{
+        justify-content: center;
+        width: 100%;
+    }
+    video{
+        width: 100%;
+    }
+    .rightside{
+        justify-items: center;
+        width: 100%
+    } 
+    .fismatext, .nowtext {
+        justify-content: center;
+    }
 }
